@@ -1,0 +1,248 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.container-all {
+  overflow: hidden;
+  .container-header {
+    max-width: 1200px;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+
+    .box-company {
+      .title {
+        color: orange;
+        font-size: 24px;
+        letter-spacing: 6px;
+        font-weight: 600;
+        @include mq(md) {
+          font-size: 20px;
+          letter-spacing: 4px;
+        }
+        .span {
+          color: rgb(186, 178, 178);
+        }
+      }
+    }
+  }
+  .container-main {
+    max-width: 1200px;
+    padding: 50px;
+    position: relative;
+    // overflow: hidden;
+
+    .circle {
+      height: 800px;
+      width: 800px;
+      border-radius: 50%;
+      border: 2px solid red;
+      position: absolute;
+      right: -450px;
+      top: -350px;
+      animation-name: position-one;
+      animation-duration: 3s;
+      animation-delay: 2s;
+      animation-fill-mode: forwards;
+      @include mq(sm) {
+        animation-name: position-one-mobile;
+        height: 100px;
+        width: 100px;
+        top: 300px;
+        left: 50px;
+        transition: 1s ease;
+      }
+      // @include mq(xs) {
+      //   height: 150px;
+      //   width: 150px;
+      //   left: 60%;
+      //   top: -100px;
+      //   transition: 1s ease;
+      // }
+    }
+
+    @keyframes position-one {
+      0% {
+        height: 800px;
+        width: 800px;
+        right: -450px;
+        top: -350px;
+      }
+      100% {
+        height: 300px;
+        width: 300px;
+        z-index: -2;
+        border-radius: 0;
+        transform: rotate(25deg);
+        right: -180px;
+        top: 220px;
+      }
+    }
+    @keyframes position-one-mobile {
+      0% {
+        height: 100px;
+        width: 100px;
+        top: 300px;
+        left: 50px;
+      }
+
+      100% {
+        height: 80px;
+        width: 80px;
+        top: 30px;
+        left: -50px;
+        z-index: -2;
+        border-radius: 0;
+        transform: rotate(25deg);
+      }
+    }
+    .circle-two {
+      height: 900px;
+      width: 900px;
+      border-radius: 50%;
+      border: 2px solid orange;
+      position: absolute;
+      right: -500px;
+      top: -400px;
+      animation-name: position-two;
+      animation-duration: 5s;
+      animation-delay: 2s;
+      animation-fill-mode: forwards;
+      @include mq(sm) {
+        animation-name: position-two-mobile;
+        height: 150px;
+        width: 150px;
+        left: 350px;
+        top: -150px;
+        // transition: 1s ease;
+      }
+      // @include mq(xs) {
+      //   height: 200px;
+      //   width: 200px;
+      //   left: 50%;
+      //   top: -150px;
+      //   transition: 1s ease;
+      // }
+    }
+
+    @keyframes position-two {
+      0% {
+        height: 900px;
+        width: 900px;
+        right: -500px;
+        top: -400px;
+      }
+      50% {
+        height: 400px;
+        width: 400px;
+        right: 660px;
+        top: -300px;
+      }
+      100% {
+        height: 200px;
+        width: 200px;
+        right: -100px;
+        top: -000px;
+      }
+    }
+    @keyframes position-two-mobile {
+      0% {
+        height: 150px;
+        width: 150px;
+        left: 350px;
+        top: -150px;
+      }
+      50% {
+        height: 150px;
+        width: 150px;
+        left: 500px;
+        top: 400px;
+      }
+
+      100% {
+        height: 150px;
+        width: 150px;
+        left: -70px;
+        top: 100px;
+        z-index: -2;
+      }
+    }
+
+    .circle-three {
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      clip: rect(0px, 300px, 150px, 150px);
+      background-color: orange;
+      position: absolute;
+      left: -150px;
+      bottom: -200px;
+      z-index: -2;
+      animation-name: position-three;
+      animation-duration: 7s;
+      animation-delay: 2s;
+      animation-fill-mode: forwards;
+      // @include mq(sm) {
+      //   height: 350px;
+      //   width: 350px;
+      //   left: -150px;
+      //   bottom: -150px;
+      //   transition: 1s ease;
+      // }
+    }
+  }
+
+  @keyframes position-three {
+    0% {
+      height: 300px;
+      width: 300px;
+      left: -150px;
+      bottom: -200px;
+      clip: rect(0px, 300px, 150px, 150px);
+    }
+    // 30% {
+    //   height: 200px;
+    //   width: 200px;
+    //   left: -100px;
+    //   bottom: -150px;
+    //   clip: rect(0px, 200px, 100px, 100px);
+    // }
+    50% {
+      height: 400px;
+      width: 400px;
+      left: -200px;
+      bottom: -250px;
+      clip: rect(0px, 400px, 200px, 200px);
+      background-color: transparent;
+      border: 2px solid orange;
+      // clip: rect(0px, 0, 0, 0);
+    }
+    100% {
+      height: 200px;
+      width: 200px;
+      left: -100px;
+      bottom: -150px;
+      clip: rect(0px, 200px, 100px, 100px);
+    }
+  }
+
+  .container-footer {
+    z-index: -1;
+    .box-socials {
+      max-width: 1200px;
+      padding: 10px 50px;
+      display: flex;
+      gap: 20px;
+      justify-content: flex-end;
+      .icon {
+        font-size: 30px;
+        color: orange;
+        transition: 0.3s ease-in;
+        &:hover {
+          scale: 1.1;
+        }
+      }
+    }
+  }
+}

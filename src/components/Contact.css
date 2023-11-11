@@ -1,0 +1,63 @@
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.container .box-input {
+  position: relative;
+}
+.container .box-input .text-message {
+  height: 80px;
+  width: 300px;
+}
+.container .box-input .input {
+  width: 300px;
+  padding: 4px;
+}
+.container .box-input .error {
+  font-size: 12px;
+  color: red;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}
+.container .title {
+  color: orange;
+  font-size: 30px;
+  letter-spacing: 6px;
+  font-weight: 600;
+}
+.container .title .span {
+  color: rgb(186, 178, 178);
+}
+.container .title2 {
+  color: orange;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+.container .title2 .span {
+  color: rgba(128, 128, 128, 0.567);
+}
+.container .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .box .title3 {
+  color: orange;
+  font-size: 30px;
+  letter-spacing: -2px;
+  font-weight: 800;
+  line-height: 26px;
+}
+.container .box .span {
+  color: rgba(128, 128, 128, 0.475);
+  line-height: 20px;
+  font-size: 22px;
+  font-weight: 800;
+}/*# sourceMappingURL=Contact.css.map */

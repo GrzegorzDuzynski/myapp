@@ -1,0 +1,42 @@
+.hamburger {
+  height: 30px;
+  width: 30px;
+  padding: 2px;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+}
+.hamburger .bar {
+  width: 26px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: orange;
+}
+
+.list-item {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .list-item {
+    padding: 10px;
+    background-color: rgb(20, 20, 20);
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    z-index: 10;
+  }
+}
+.list-item .item {
+  color: white;
+}
+.list-item .item:hover {
+  color: orange;
+}/*# sourceMappingURL=Navigation.css.map */

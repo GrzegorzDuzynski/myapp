@@ -1,0 +1,15 @@
+.btn-component {
+  height: 30px;
+  width: 120px;
+  background-color: rgb(20, 20, 20);
+  border: 1px solid orange;
+  border-radius: 4px;
+  padding: 6px;
+  color: orange;
+  position: relative;
+  overflow: hidden;
+}
+.btn-component:hover {
+  color: white;
+  background-color: orange;
+}/*# sourceMappingURL=button.css.map */

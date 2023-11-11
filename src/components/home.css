@@ -1,0 +1,83 @@
+.container-home {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 850px) {
+  .container-home {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.container-home .box-info {
+  width: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 512px) {
+  .container-home .box-info {
+    width: 250px;
+  }
+}
+.container-home .box-img {
+  width: 500px;
+  height: 350px;
+  transform: perspective(1000px) rotateY(-30deg);
+  opacity: 60%;
+  box-shadow: 5px 15px 20px 5px rgb(49, 48, 48);
+}
+@media (max-width: 850px) {
+  .container-home .box-img {
+    width: 400px;
+    height: 300px;
+    transform: perspective(1000px) rotateY(0deg);
+  }
+}
+@media (max-width: 512px) {
+  .container-home .box-img {
+    width: 250px;
+    height: 190px;
+  }
+}
+.container-home .title {
+  font-size: 45px;
+  color: white;
+  letter-spacing: 2px;
+}
+@media (max-width: 512px) {
+  .container-home .title {
+    font-size: 30px;
+  }
+}
+.container-home .text {
+  color: white;
+}
+@media (max-width: 512px) {
+  .container-home .text {
+    font-size: 12px;
+  }
+}
+.container-home .button-shine::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 70%);
+  bottom: 0;
+  left: -100px;
+  animation: shine 3s infinite linear;
+}
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+  20% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}/*# sourceMappingURL=Home.css.map */

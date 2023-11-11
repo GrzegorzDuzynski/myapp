@@ -1,0 +1,83 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.container-home {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  @include mq(md) {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  .box-info {
+    width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include mq(xs) {
+      width: 250px;
+    }
+  }
+  .box-img {
+    width: 500px;
+    height: 350px;
+    transform: perspective(1000px) rotateY(-30deg);
+    opacity: 60%;
+    box-shadow: 5px 15px 20px 5px rgb(49, 48, 48);
+
+    @include mq(md) {
+      width: 400px;
+      height: 300px;
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    @include mq(xs) {
+      width: 250px;
+      height: 190px;
+    }
+  }
+  .title {
+    font-size: 45px;
+    color: white;
+    letter-spacing: 2px;
+    @include mq(xs) {
+      font-size: 30px;
+    }
+  }
+  .text {
+    color: white;
+    @include mq(xs) {
+      font-size: 12px;
+    }
+  }
+  .button-shine {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 30px;
+      background-image: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0) 70%
+      );
+      bottom: 0;
+      left: -100px;
+      animation: shine 3s infinite linear;
+    }
+  }
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+    20% {
+      left: 100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+}
