@@ -9,6 +9,7 @@ const Navigation = () => {
   console.log(isNavOpen);
 
   useEffect(() => {
+    const window = window;
     if (window.innerWidth >= 768) {
       setIsNavOpen(true);
     }
