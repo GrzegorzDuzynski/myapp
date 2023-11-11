@@ -5,16 +5,18 @@ import "./Navigation.scss";
 
 const Navigation = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [windowScreen, setwindowScreen] = useState(window);
+
+  setwindowScreen(window);
 
   console.log(isNavOpen);
 
   useEffect(() => {
-    const window = window;
-    if (window.innerWidth >= 768) {
+    if (windowScreen.innerWidth >= 768) {
       setIsNavOpen(true);
     }
-    window.addEventListener("resize", () => {
-      if (window.innerWidth >= 768) {
+    windowScreen.addEventListener("resize", () => {
+      if (windowScreen.innerWidth >= 768) {
         setIsNavOpen(true);
       } else {
         setIsNavOpen(false);
@@ -22,14 +24,14 @@ const Navigation = () => {
     });
 
     return () =>
-      window.removeEventListener("resize", () => {
-        if (window.innerWidth >= 768) {
+      windowScreen.removeEventListener("resize", () => {
+        if (windowScreen.innerWidth >= 768) {
           setIsNavOpen(true);
         } else {
           setIsNavOpen(false);
         }
       });
-  }, [window]);
+  }, [windowScreen]);
 
   const handlerNavMenu = () => {
     setIsNavOpen(!isNavOpen);
