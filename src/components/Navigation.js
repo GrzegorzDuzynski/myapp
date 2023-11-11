@@ -28,7 +28,7 @@ const Navigation = () => {
           setIsNavOpen(false);
         }
       });
-  }, window);
+  }, [window]);
 
   const handlerNavMenu = () => {
     setIsNavOpen(!isNavOpen);
