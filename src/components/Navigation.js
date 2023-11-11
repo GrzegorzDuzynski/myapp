@@ -5,9 +5,9 @@ import "./Navigation.scss";
 
 const Navigation = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [windowScreen, setwindowScreen] = useState(window);
+  // const [windowScreen, setwindowScreen] = useState(window);
 
-  setwindowScreen(window);
+  const windowScreen = window;
 
   console.log(isNavOpen);
 
