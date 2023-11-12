@@ -27,6 +27,7 @@
     transform: perspective(1000px) rotateY(-30deg);
     opacity: 60%;
     box-shadow: 5px 15px 20px 5px rgb(49, 48, 48);
+    animation: fadeIn 3s forwards linear;
 
     @include mq(md) {
       width: 400px;
@@ -78,6 +79,15 @@
     }
     100% {
       left: 100%;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 60%;
     }
   }
 }
