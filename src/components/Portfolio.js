@@ -31,7 +31,7 @@ const Portfolio = () => {
   const settings = {
     dots: true,
     infinite: true,
-    centerPadding: "60px",
+    centerPadding: "10px",
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,

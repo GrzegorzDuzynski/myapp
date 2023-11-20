@@ -3,11 +3,8 @@ import myimg from "../myimg.jpg";
 import myimg2 from "../myimg2.jpg";
 import Button from "./Button";
 import mysqlworkbench_93532 from "../mysqlworkbench_93532.svg";
-import vbaSvg from "../vba-svgrepo-com.svg";
 import djnagoSvg from "../django-svgrepo-com.svg";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faSass,
   faHtml5,
@@ -41,8 +38,8 @@ const About = () => {
         <p className="text">
           Zmiana jest moim paliwem, a osiągnięte sukcesy stanowią napęd do
           nieustannego doskonalenia. Jestem gotów dołączyć do zespołu, który
-          pozwoli mi rozwijać moje umiejętności programistyczne, a jednocześnie
-          pomaga tworzyć wartość, która przyczynia się do pozytywnej przemiany
+          pozwoli mi rozwijać moje umiejętności programistyczne. Jednocześnie
+          chcę tworzyć wartość, która przyczynia się do pozytywnej przemiany
           otaczającego świata. To dla mnie nie tylko praca, to realizacja mojej
           pasji
         </p>
