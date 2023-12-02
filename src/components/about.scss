@@ -2,6 +2,7 @@
 @import "../mixins.scss";
 
 .container-about {
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   gap: 20px;
