@@ -47,6 +47,16 @@ const Portfolio = () => {
         `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
       );
     },
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          slidesPerRow: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="container-portfolio">

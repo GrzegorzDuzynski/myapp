@@ -33,7 +33,7 @@ const About = () => {
         <img src={myimg2} alt="Grzegorz Dużyński" />
       </div>
       <div className="box-about">
-        <h2 className="title">I'm Frontend</h2>
+        <h2 className="title">I'm Fullstack</h2>
         <h3 className="title-position">Developer</h3>
         <p className="text">
           Zmiana jest moim paliwem, a osiągnięte sukcesy stanowią napęd do
