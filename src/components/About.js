@@ -13,6 +13,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import "./about.scss";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -43,7 +44,9 @@ const About = () => {
           otaczającego świata. To dla mnie nie tylko praca, to realizacja mojej
           pasji
         </p>
-        <Button>Download CV</Button>
+        <Link to="https://gdcv.netlify.app">
+          <Button>Sprawdź CV</Button>
+        </Link>
       </div>
     </div>
   );
