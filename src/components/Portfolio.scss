@@ -14,6 +14,7 @@
       .box-img {
         height: 200px;
         width: 350px;
+        animation: fadeIn 3s forwards linear;
         @include mq(md) {
           height: 130px;
           width: 200px;
