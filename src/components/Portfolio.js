@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { places } from "../data";
+import { Link } from "react-router-dom";
 
 import "./Portfolio.scss";
 
@@ -42,14 +43,10 @@ const Portfolio = () => {
     swipeToSlide: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    afterChange: function (index) {
-      console.log(
-        `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
-      );
-    },
+
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 512,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -62,9 +59,20 @@ const Portfolio = () => {
     <div className="container-portfolio">
       <Slider {...settings}>
         {places.map((place, id) => (
-          <div key={id} className="box-img">
-            <img src={place.imgUrl} alt={place.title} />
-            <h2>{place.title}</h2>
+          <div key={id} className="box">
+            <div className="box-internal">
+              <h2>
+                <Link className="title" to={place.url}>
+                  {place.title}
+                </Link>
+              </h2>
+              <div className="box-img">
+                <img src={place.imgUrl} alt={place.title} />
+              </div>
+              <div className="box-text">
+                <p className="text">{place.text}</p>
+              </div>
+            </div>
           </div>
         ))}
       </Slider>

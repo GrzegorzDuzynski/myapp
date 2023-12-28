@@ -1,10 +1,51 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
 .container-portfolio {
   height: calc(100vh - 100px);
-  padding: 30px;
+  padding: 10px;
 
-  .box-img {
-    height: 300px;
-    width: 300px;
-    padding: 20px;
+  .box {
+    padding: 10px;
+    .box-internal {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .box-img {
+        height: 200px;
+        width: 350px;
+        @include mq(md) {
+          height: 130px;
+          width: 200px;
+        }
+      }
+      .title {
+        font-size: 18px;
+        letter-spacing: 2px;
+        color: white;
+        &:hover {
+          color: orange;
+        }
+        @include mq(md) {
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
+      }
+      .box-text {
+        width: 350px;
+        @include mq(md) {
+          width: 200px;
+        }
+
+        .text {
+          color: white;
+          font-size: 9px;
+          letter-spacing: 1px;
+          @include mq(md) {
+            font-size: 8px;
+          }
+        }
+      }
+    }
   }
 }
