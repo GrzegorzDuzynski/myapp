@@ -42,7 +42,7 @@ const About = () => {
           pozwoli mi rozwijać moje umiejętności programistyczne. Jednocześnie
           chcę tworzyć wartość, która przyczynia się do pozytywnej przemiany
           otaczającego świata. To dla mnie nie tylko praca, to realizacja mojej
-          pasji
+          pasji.
         </p>
         <Link to="https://gdcv.netlify.app">
           <Button>Sprawdź CV</Button>
