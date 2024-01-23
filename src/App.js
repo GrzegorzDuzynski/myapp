@@ -35,11 +35,16 @@ function App() {
           <div className="circle-two"></div>
           <div className="circle-three"></div>
           <Routes>
-            <Route path="/" element={<Home />} />
+            {/* <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/About" element={<About />} />
             <Route path="/Portfolio" element={<Portfolio />} />
-            <Route path="/Contact" element={<Contact />} />
+            <Route path="/Contact" element={<Contact />} /> */}
+            <Route index element={<Home />} />
+            <Route path="home" element={<Home />} />
+            <Route path="About" element={<About />} />
+            <Route path="Portfolio" element={<Portfolio />} />
+            <Route path="Contact" element={<Contact />} />
           </Routes>
         </div>
       </main>

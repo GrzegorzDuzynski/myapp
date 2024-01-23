@@ -8,6 +8,32 @@ import "./Contact.scss";
 
 const Contact = () => {
   const [showPopup, setShowPopup] = useState(false);
+
+  const fetchSubmit = async (formData) => {
+    try {
+      console.log("jestem w try");
+      const response = await fetch(
+        "https://gddev.pl/wp-headless/server/wp-json/wp/v2/contact-form2",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json; charset=utf-8",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+      console.log("jestem w try");
+
+      if (response.ok) {
+        console.log(response);
+      } else {
+        console.log(response);
+      }
+    } catch (error) {
+      console.error("Błąd podczas wysyłania danych:", error);
+    }
+  };
+
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -18,6 +44,10 @@ const Contact = () => {
     onSubmit: (values) => {
       console.log("onsubmit", values);
       setShowPopup(true);
+      const formData = new FormData();
+      formData.append("form", values);
+      console.log(formData);
+      fetchSubmit(values);
       // setValues({ values });
     },
     validationSchema: Yup.object({
