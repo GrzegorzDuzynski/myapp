@@ -1,8 +1,6 @@
 import React from "react";
 import kodimg from "../kod.png";
-import heroimg from "../WebHero.png";
-import hero2img from "../webhero2.png";
-import hero3img from "../webhero3.png";
+import hero3img from "../webhero3_Easy-Resize.com.jpg";
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 import "./Home.scss";

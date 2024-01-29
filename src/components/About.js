@@ -1,6 +1,5 @@
 import React from "react";
-import myimg from "../myimg.jpg";
-import myimg2 from "../myimg2.jpg";
+import myimg2 from "../myimg2_Easy-Resize.com.jpg";
 import Button from "./Button";
 import mysqlworkbench_93532 from "../mysqlworkbench_93532.svg";
 import djnagoSvg from "../django-svgrepo-com.svg";
