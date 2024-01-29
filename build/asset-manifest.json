@@ -1,14 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.c9e4a20e.css",
-    "main.js": "/static/js/main.20eff4e7.js",
+    "main.js": "/static/js/main.50a801c5.js",
     "static/js/787.d3befce1.chunk.js": "/static/js/787.d3befce1.chunk.js",
-    "static/media/webhero2.png": "/static/media/webhero2.7eace7b34995035db165.png",
-    "static/media/WebHero.png": "/static/media/WebHero.407914680e930666bb55.png",
-    "static/media/webhero3.png": "/static/media/webhero3.853f293caa2fa19ca78e.png",
     "static/media/kod.png": "/static/media/kod.1ec3bbecb2884a2db47d.png",
-    "static/media/myimg.jpg": "/static/media/myimg.3f2780c9437a9d94d977.jpg",
-    "static/media/myimg2.jpg": "/static/media/myimg2.f61ea01a4810c8485c7f.jpg",
+    "static/media/myimg2_Easy-Resize.com.jpg": "/static/media/myimg2_Easy-Resize.com.d2e083446fede28f3220.jpg",
+    "static/media/webhero3_Easy-Resize.com.jpg": "/static/media/webhero3_Easy-Resize.com.8104dfd377500b38a7fd.jpg",
     "static/media/mysqlworkbench_93532.svg": "/static/media/mysqlworkbench_93532.03dcb1ec6da837b1bf83e7ec2fc4bd68.svg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -17,11 +14,11 @@
     "static/media/django-svgrepo-com.svg": "/static/media/django-svgrepo-com.259aebee4378ed6a923f688b555a1e50.svg",
     "index.html": "/index.html",
     "main.c9e4a20e.css.map": "/static/css/main.c9e4a20e.css.map",
-    "main.20eff4e7.js.map": "/static/js/main.20eff4e7.js.map",
+    "main.50a801c5.js.map": "/static/js/main.50a801c5.js.map",
     "787.d3befce1.chunk.js.map": "/static/js/787.d3befce1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c9e4a20e.css",
-    "static/js/main.20eff4e7.js"
+    "static/js/main.50a801c5.js"
   ]
 }
