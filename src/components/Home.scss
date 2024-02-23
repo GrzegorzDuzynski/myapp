@@ -2,7 +2,7 @@
 @import "../mixins.scss";
 
 .container-home {
-  height: calc(100vh - 200px);
+  min-height: calc(100vh - 200px);
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -42,10 +42,17 @@
   }
   .title {
     font-size: 45px;
+    line-height: 36px;
     color: white;
     letter-spacing: 2px;
+    transition: all 0.5s ease;
+    &:hover {
+      transform: translateX(10px);
+      letter-spacing: 5px;
+    }
     @include mq(xs) {
       font-size: 30px;
+      line-height: 26px;
     }
   }
   .text {

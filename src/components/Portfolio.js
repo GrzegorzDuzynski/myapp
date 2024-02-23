@@ -61,14 +61,12 @@ const Portfolio = () => {
         {places.map((place, id) => (
           <div key={id} className="box">
             <div className="box-internal">
-              <h2>
-                <Link className="title" to={place.url}>
-                  {place.title}
-                </Link>
-              </h2>
-              <div className="box-img">
-                <img src={place.imgUrl} alt={place.title} />
-              </div>
+              <Link className="title" to={place.url}>
+                <h2>{place.title}</h2>
+                <div className="box-img">
+                  <img src={place.imgUrl} alt={place.title} />
+                </div>
+              </Link>
               <div className="box-text">
                 <p className="text">{place.text}</p>
               </div>
