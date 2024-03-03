@@ -42,11 +42,11 @@ const Contact = () => {
     },
 
     onSubmit: (values) => {
-      console.log("onsubmit", values);
+      // console.log("onsubmit", values);
       // setShowPopup(true);
       const formData = new FormData();
       formData.append("form", values);
-      console.log(formData);
+      // console.log(formData);
       fetchSubmit(values);
       // setValues({ values });
     },
@@ -57,7 +57,7 @@ const Contact = () => {
       message: Yup.string()
         .required("Pole jest wymagane")
         .min(3, "Zbyt krótka wiadomość ")
-        .max(220, "Zbyt duga wiadomość"),
+        .max(800, "Zbyt duga wiadomość"),
       phone: Yup.string()
         .required("Pole jest wymagane")
         .matches(/^\+?\d{6,15}$/, {
@@ -78,8 +78,7 @@ const Contact = () => {
         <div className="container">
           <div className="box">
             <h3 className="title">
-              Skontaktuj się ze mną, przesyłając poniższy formularz, a ja
-              skontaktuję się z Tobą tak szybko, jak to możliwe
+              Skontaktuj się ze mną przez poniższy formularz
             </h3>
             {/* </div> */}
             {/* <div className="box-right"> */}
